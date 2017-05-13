@@ -1,0 +1,9 @@
+
+public class ListStack {
+	// implementa gli stack come liste
+	
+	public int lunghezza = 0;
+	private IntList lista == null;
+	
+
+}
