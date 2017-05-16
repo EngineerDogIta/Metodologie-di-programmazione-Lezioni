@@ -1,29 +1,23 @@
 package Pac3;
 
-public class ArrayStack {
-	private final static int SIZE = 10;
-	private int[] stk;
-	private int top = -1;
-	
-	ArrayStack(){
-		stk = new int[SIZE];
-	}
-	
-	public ArrayStack(int i) {
-		// TODO Auto-generated constructor stub
+public class ArrayStack implements Stack{
+
+	@Override
+	public boolean is_empty() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
-	public int lunghezza(){
-		return stk.length;
+	@Override
+	public void push(int v) throws FullStackException {
+		// TODO Auto-generated method stub
+		
 	}
-	
-	public void push(int v){ // inserisce un intero in cima alla pila
-		top = top +1;
-		stk[top] = v;
+
+	@Override
+	public int pop() throws EmptyStackException {
+		// TODO Auto-generated method stub
+		return 0;
 	}
-	
-	public int pop(){ // estrae l'elemento in cima alla pila e la restituisce
-		top = top -1;
-		return stk[top+1];		
-	}
+
 }

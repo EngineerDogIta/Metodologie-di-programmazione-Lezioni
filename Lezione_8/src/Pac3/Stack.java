@@ -1,9 +1,5 @@
 package Pac3;
 
-import java.util.EmptyStackException;
-
-import javax.annotation.processing.FilerException;
-
 public interface Stack {
 	
 	 /* Nelle implementazioni, i metodi devono essere dichiarato
@@ -12,6 +8,6 @@ public interface Stack {
 	  * Anche le interfacce possono avere attributi, che sono implicitamente static */
 	
 	boolean is_empty ();
-	void push (int v) throws FilerException;
+	void push (int v) throws FullStackException;
 	int pop () throws EmptyStackException;
 }

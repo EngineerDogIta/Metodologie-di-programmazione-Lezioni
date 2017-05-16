@@ -1,16 +1,12 @@
 package Pac3;
 
-import java.util.EmptyStackException;
-
-import javax.annotation.processing.FilerException;
-
 public class ReverseStack {
 	
-	private static void dump (Stack s, Stack tmp1) throws EmptyStackException, FullStackException, FilerException {
+	private static void dump (Stack s1, Stack s2) throws EmptyStackException, FullStackException {
 		// scarica il contenuto di s1 in s2... 'a coppa abbascio
 		
-		while (!s.is_empty())
-			tmp1.push(s.pop());
+		while (!s1.is_empty())
+			s2.push(s1.pop());
 	}
 	
 	public static void reverse (Stack s) throws EmptyStackException, FullStackException {
@@ -19,7 +15,7 @@ public class ReverseStack {
 		ListStack tmp1 = new ListStack();
 		ListStack tmp2 = new ListStack();
 		dump(s, tmp1);
-		dump(tmp1, tmp2); //TODO something something da aggiustare qui
+		dump(tmp1, tmp2);
 		dump(tmp2, s);
 	}
 
