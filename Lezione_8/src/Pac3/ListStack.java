@@ -1,28 +1,40 @@
 package Pac3;
 
-public class ListStack implements Stack{
+import java.util.EmptyStackException;
 
-	@Override
+public class ListStack implements Stack {
+	// implementa gli stack come liste
+
+	public int lunghezza = 0;
+	private IntList lista = null;
+
 	public boolean is_empty() {
-		// TODO Auto-generated method stub
-		return false;
+		// restituisce true se lo stack è vuoto, false altrimenti
+
+		return lunghezza == 0;
 	}
 
-	@Override
-	public void push(int v) throws FullStackException {
-		// TODO Auto-generated method stub
-		
+	public void push(int v) {
+		// inserisce un intero in cima alla pila
+
+		lista = new IntList(v, lista);
+		lunghezza = lunghezza + 1;
 	}
 
-	@Override
 	public int pop() throws EmptyStackException {
-		// TODO Auto-generated method stub
-		return 0;
+		// estrae l'elemento in cima alla pila (e lo restituisce)... se esiste!
+
+		if (lunghezza == 0)
+			throw new EmptyStackException();
+		int top = lista.head;
+		lista = lista.tail;
+		lunghezza = lunghezza - 1;
+		return top;
 	}
 
 	public void printStack() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
