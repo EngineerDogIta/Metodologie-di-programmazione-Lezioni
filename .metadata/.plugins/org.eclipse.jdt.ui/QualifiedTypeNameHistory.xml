@@ -5,6 +5,10 @@
 <fullyQualifiedTypeName name="ArrayStack3"/>
 <fullyQualifiedTypeName name="FullStackException"/>
 <fullyQualifiedTypeName name="FullMaxStackException"/>
-<fullyQualifiedTypeName name="java.util.EmptyStackException"/>
 <fullyQualifiedTypeName name="IntList"/>
+<fullyQualifiedTypeName name="C1"/>
+<fullyQualifiedTypeName name="C2"/>
+<fullyQualifiedTypeName name="java.util.EmptyStackException"/>
+<fullyQualifiedTypeName name="javax.annotation.processing.FilerException"/>
+<fullyQualifiedTypeName name="Pac3.Stack"/>
 </qualifiedTypeNameHistroy>
