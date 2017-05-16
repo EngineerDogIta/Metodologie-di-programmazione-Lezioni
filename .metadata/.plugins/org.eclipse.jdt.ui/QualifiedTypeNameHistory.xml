@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="ArrayStack"/>
+<fullyQualifiedTypeName name="ArrayStack2"/>
+<fullyQualifiedTypeName name="ArrayStack3"/>
+<fullyQualifiedTypeName name="FullStackException"/>
+<fullyQualifiedTypeName name="FullMaxStackException"/>
 <fullyQualifiedTypeName name="java.util.EmptyStackException"/>
+<fullyQualifiedTypeName name="IntList"/>
 </qualifiedTypeNameHistroy>
