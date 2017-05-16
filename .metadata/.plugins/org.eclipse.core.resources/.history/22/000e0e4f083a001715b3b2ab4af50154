@@ -1,0 +1,16 @@
+
+public class test {
+
+	public static void main(String[] args) {
+		/*gioca con l'ereditarieta'*/
+		C1 x = new C1();
+		x.ciao("x");
+		System.out.println("b = " + x.b);
+		
+		x.blah();
+		
+		C2 y = new C2();
+		y.ciao("y");
+	}
+
+}
