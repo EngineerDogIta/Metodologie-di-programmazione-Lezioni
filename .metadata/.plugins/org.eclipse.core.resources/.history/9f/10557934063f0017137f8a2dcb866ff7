@@ -3,5 +3,5 @@
  */
 
 public interface Leggibile<E> {
-	E get();
+    E get ();
 }

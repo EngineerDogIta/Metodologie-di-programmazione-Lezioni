@@ -1,9 +1,0 @@
-
-public class TestListStack {
-	public static void main(String[] args) {
-		//gioca con le pile fatte a lista
-		
-		ListaStack l = new ListaStack();
-		System.out.println(l.is_empty());
-	}
-}

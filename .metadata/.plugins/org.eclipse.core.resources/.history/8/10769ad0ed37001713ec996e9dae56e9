@@ -1,9 +1,0 @@
-
-public class FullMaxStackException extends Exception {
-	
-	public int lung;
-	
-	public FullMaxStackException() {
-		lung = n;
-	}
-}
